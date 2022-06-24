@@ -1,0 +1,36 @@
+SELECT *
+FROM PortfolioProject.dbo.cost_of_living
+
+-- REMOVING THE RANK COLUMN FROM THE TABLE SINCE IT ONLY LISTS A NULL VALUE FOR EVERY ROW AND DOESN'T SEEM TO PROVIDE ANY VALUE.
+
+ALTER TABLE PortfolioProject.dbo.cost_of_living
+DROP COLUMN Rank
+
+-- SELECTING TOP 50 COUNTRIES WITH THE HIGHEST COST OF LIVING INDEX IN THE DATASET
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+
+-- ACCORDING TO THIS DATASET, NEW YORK, NY, UNITED STATES IS USED AS THE BASE REGION FOR ALL OF THE INDEXES (COST OF LIVING, RENT, ETC.)
+
+-- NEXT STATEMENTS WERE WRITTEN TO AQUIRE DATA OF TOP 50 AREAS FOR RENT, COST OF LIVING PLUS RENT, GROCERIES, RESTAURANT PRICE, AND LOCAL PURCHASING POWER INDEXES
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+ORDER BY [Rent Index] DESC
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+ORDER BY [Cost of Living Plus Rent Index] DESC
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+ORDER BY [Groceries Index] DESC
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+ORDER BY [Restaurant Price Index] DESC
+
+SELECT TOP 50 *
+FROM PortfolioProject.dbo.cost_of_living
+ORDER BY [Local Purchasing Power Index] DESC
