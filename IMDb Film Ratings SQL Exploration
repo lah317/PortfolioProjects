@@ -4,7 +4,7 @@ SELECT TOP 30 *
 FROM PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 ORDER BY [IMDb-Rating] DESC
 
--- CLEANING DATA. CHANGED [ClintEastwood, EliWallach, LeeVanCleef, AldoGiuffrè] TO [ClintEastwood, EliWallach, LeeVanCleef, AldoGiuffre]
+-- CLEANING DATA. CHANGED [ClintEastwood, EliWallach, LeeVanCleef, AldoGiuffrÃ¨] TO [ClintEastwood, EliWallach, LeeVanCleef, AldoGiuffre]
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 SET Stars = 'ClintEastwood, EliWallach, LeeVanCleef, AldoGiuffre'
@@ -38,16 +38,16 @@ SET [Censor-board-rating] = 'PG'
 WHERE Title = 'To Be or Not to Be'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Stars = 'IreneJacob, Jean-LouisTrintignant, Fr�d�riqueFeder, Jean-PierreLorit'
+SET Stars = 'IreneJacob, Jean-LouisTrintignant, FrédériqueFeder, Jean-PierreLorit'
 WHERE Title = 'Trois couleurs: Rouge'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Director = 'Fran�oisTruffaut', Stars = 'Jean-PierreL�aud, AlbertR�my, ClaireMaurier, GuyDecomble'
+SET Director = 'FrançoisTruffaut', Stars = 'Jean-PierreLéaud, AlbertRémy, ClaireMaurier, GuyDecomble'
 WHERE Title = 'Les quatre cents coups'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Title= 'H�stsonaten', Stars = 'IngridBergman, LivUllmann, LenaNyman, HalvarBjork'
-WHERE Title = 'Höstsonaten'
+SET Title= 'Höstsonaten', Stars = 'IngridBergman, LivUllmann, LenaNyman, HalvarBjork'
+WHERE Title = 'HÃ¶stsonaten'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 SET Stars = 'WilliamH.Macy, FrancesMcDormand, SteveBuscemi, PeterStormare'
@@ -59,9 +59,9 @@ WHERE Title = 'How to Train Your Dragon'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 SET Title= 'WALL-E', [Censor-board-rating] = 'G'
-WHERE Title = 'WALL·E'
+WHERE Title = 'WALLÂ·E'
 
--- FORGOT TO CHANGE THE CENSORSHIP RATING, SO HAD TO CREATE NEW STATEMENT WITH TITLE AS 'WALL-E' INSTEAD OF 'WALL·E', SINCE TITLE WAS CHANGED.
+-- FORGOT TO CHANGE THE CENSORSHIP RATING, SO HAD TO CREATE NEW STATEMENT WITH TITLE AS 'WALL-E' INSTEAD OF 'WALLÂ·E', SINCE TITLE WAS CHANGED.
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 SET [Censor-board-rating] = 'G'
@@ -72,19 +72,19 @@ SET Stars = 'TonyChiu-WaiLeung, MaggieCheung, SiuPing-Lam, JoeCheungTung-cho', [
 WHERE Title = 'Fa Yeung Nin Wah'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Stars = 'VincentCassel, HubertKounde, Sa�dTaghmaoui, AbdelAhmedGhili'
+SET Stars = 'VincentCassel, HubertKounde, SaïdTaghmaoui, AbdelAhmedGhili'
 WHERE Title = 'La haine'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Stars = 'IreneJacob, WladyslawKowalski, HalinaGryglaszewska, KalinaJedrusik', Title = 'La double vie de V�ronique'
-WHERE Title = 'La double vie de Véronique'
+SET Stars = 'IreneJacob, WladyslawKowalski, HalinaGryglaszewska, KalinaJedrusik', Title = 'La double vie de Véronique'
+WHERE Title = 'La double vie de VÃ©ronique'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
 SET Title = 'Toki o kakeru shojo', [Censor-board-rating] = 'NotRated'
-WHERE Title = 'Toki o kakeru shôjo'
+WHERE Title = 'Toki o kakeru shÃ´jo'
 
 UPDATE PortfolioProject.dbo.IMDb_Dataset_From_Kaggle
-SET Stars = 'GerardJugnot, Fran�oisBerl�and, Jean-BaptisteMaunier, KadMerad'
+SET Stars = 'GerardJugnot, FrançoisBerléand, Jean-BaptisteMaunier, KadMerad'
 WHERE Title = 'Les choristes'
 
 SELECT TOP 30 *
